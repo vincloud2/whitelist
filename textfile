@@ -1,0 +1,32 @@
+Whitelisting files for scanning in Windows Defender involves excluding specific files, folders, or file types from being scanned by the antivirus software. This can be useful if you have files that are known to be safe and don't want them to be repeatedly scanned. Here's how you can whitelist files in Windows Defender:
+
+Using Windows Security:
+
+Open Windows Security by searching for it in the Start menu.
+Click on "Virus & threat protection."
+Under "Exclusions," click on "Add or remove exclusions."
+Choose the type of exclusion you want to add: "Folder," "File," "File type," or "Process."
+Navigate to the location of the file or folder you want to exclude, and select it.
+The exclusion will be added, and Windows Defender won't scan that file or folder.
+Using Group Policy:
+
+Open the Group Policy Editor by searching for "gpedit.msc" in the Start menu.
+Navigate to Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Exclusions.
+Double-click on the policy named "Exclude files and paths from scans."
+Select "Enabled" and click on "Show" to enter the list of excluded files and folders.
+Add the paths of the files or folders you want to exclude from scanning.
+Click "OK" to save the changes.
+Using PowerShell:
+
+You can also use PowerShell to add exclusions to Windows Defender. Here's an example:
+
+powershell
+Copy code
+# Add a folder exclusion
+Add-MpPreference -ExclusionPath "C:\Path\To\Excluded\Folder"
+
+# Add a file exclusion
+Add-MpPreference -ExclusionPath "C:\Path\To\Excluded\File.exe"
+Replace "C:\Path\To\Excluded\Folder" and "C:\Path\To\Excluded\File.exe" with the paths of the folder and file you want to exclude.
+
+Remember that while whitelisting files can be useful for improving performance and avoiding unnecessary scanning of safe files, it's important to be cautious. Excluding files from scanning means that those files won't be checked for potential threats. Only exclude files that you are absolutely sure are safe and won't introduce security risks to your system.

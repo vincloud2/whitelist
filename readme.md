@@ -27,3 +27,15 @@ Click on "Virus & threat protection."
 Scroll down to the "Exclusions" section and click on "Add or remove exclusions."
 You should see the exclusions you've added using PowerShell listed here.
 
+
+![image](https://github.com/vincloud2/whitelist/assets/128999303/d1e2d363-4b6f-4281-829c-2832eec884a6)
+
+![image](https://github.com/vincloud2/whitelist/assets/128999303/3a75662b-2edf-4b37-bc16-198557b21a6a)
+
+![image](https://github.com/vincloud2/whitelist/assets/128999303/e5c85f6b-cc88-41d6-afd3-b0151b90d44a)
+
+
+
+
+
+
